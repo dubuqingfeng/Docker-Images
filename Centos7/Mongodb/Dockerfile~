@@ -1,6 +1,6 @@
 # About Mongodb of Docker
 # 
-# Version:1.0.0
+# Version:
 
 FROM centos:7
 MAINTAINER Dubu Qingfeng <1135326346@qq.com>
