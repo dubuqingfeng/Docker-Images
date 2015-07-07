@@ -1,0 +1,12 @@
+[nginx]
+name=nginx repo
+baseurl=http://nginx.org/packages/centos/$releasever/$basearch/
+gpgcheck=0
+enabled=1
+
+## Remi Dependency on CentOS 7 and Red Hat (RHEL) 7 ##
+rpm -Uvh http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-1.noarch.rpm
+ 
+## CentOS 7 and Red Hat (RHEL) 7 ##
+rpm -Uvh http://rpms.famillecollet.com/enterprise/remi-release-7.rpm
+
