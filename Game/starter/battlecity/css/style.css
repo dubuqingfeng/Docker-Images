@@ -1,0 +1,81 @@
+body,div,p,canvas{
+margin:0;
+padding:0;
+}
+
+body {
+background-color:#333;
+color:#ff9966;
+}
+
+
+a:link {color: #fff;text-decoration: underline;}
+a:visited {color: #f26;text-decoration: underline;}
+a:hover{color: #f00;text-decoration: underline;}
+
+.container {
+width: 800px;
+margin-left:  auto;
+margin-right:  auto;
+position: relative;
+text-align: center;
+}
+
+#header{
+position:relative;
+}
+
+#player1 {
+position: absolute;
+top: 420px;
+text-align: left;
+list-style: none outside none;
+left: -20px;
+}
+
+#player2 {
+position: absolute;
+top: 420px;
+text-align: left;
+list-style: none outside none;
+left: 640px;
+}
+
+#game{
+background-color:#000;
+}
+
+#game canvas{
+position:absolute;
+top:50px;
+left:144px;
+}
+
+#srcImg{
+display:none;
+}
+
+#astar{
+margin: 100px 0px 0px 600px;
+}
+
+#author{
+position: absolute;
+text-align: left;
+left: 640px;
+top: 50px;
+list-style: inside outside none;
+}
+
+#cheat{
+opacity: 0;
+}
+#cheat:hover{
+opacity: 0.9;
+}
+
+#fast-mode{
+position: absolute;
+left: 670px;
+top: 200px;
+}

@@ -1,0 +1,82 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="tank,html5,canvas,ai">
+	<title>Battle City AI</title>
+	<link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
+	<script type="text/javascript">window.onload = function(){main()}</script>
+</head>
+<body >
+	<div class="container">
+	<div id = "srcImg">
+		<img src="img/tankAll.gif" id = "tankAll"/>
+	</div>
+	
+	<div id="game">
+		<canvas id="wall" width="512" height="448"></canvas> 
+		<canvas id="main" width="512" height="448"></canvas>
+		<canvas id="grass" width="512" height="448"></canvas>	
+		<canvas id="upp" width="512" height="448"></canvas> 
+		<canvas id="stage" width="512" height="448"></canvas> 
+	</div>
+	
+	<div id = "header">
+		<h1>Battle City AI</h1>
+	</div>
+	<ul id = "player1">
+		主机Player1
+		<li>方向: ↑↓→←</li>
+		<li>开火:空格/回车</li>
+	</ul>
+	<ul id = "player2">
+		副机Player2
+		<li>方向: w s a d</li>
+		<li>开火: j</li>
+	</ul>
+	<ul id="author">
+		<li>游戏制作: <a href="http://weibo.com/06wj">06wj</a></li>	
+		<li>游戏AI: <a href="http://weibo.com/rubyshoes">Jules.Wang</a></li>
+			<br>
+		<div id="cheat">攻略秘笈:
+		<li>在开始菜单按下9，开局9条命</li>	
+		<li>游戏中按下1，随机出现宝物</li>	
+		<li>游戏中按下2，跳关</li>	
+		<li>游戏中按下0，切换高难度模式</li>	
+		</div>
+	</ul>		
+
+	<div id="fast-mode"></div>		
+	</div>
+	<canvas id="astar" width="512" height="448"></canvas>
+	</div>
+	<a href="https://github.com/JulesWang/BattleCity.AI"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
+	<script type="text/javascript" src = "js/Const.js"></script>
+	<script type="text/javascript" src = "js/Sound.js"></script>
+	<script type="text/javascript" src = "js/Map.js"></script>
+	<script type="text/javascript" src = "js/MapLevel.js"></script>
+	<script type="text/javascript" src = "js/StageStart.js"></script>
+	<script type="text/javascript" src = "js/Sprite.js"></script>
+	<script type="text/javascript" src = "js/Score.js"></script>
+	<script type="text/javascript" src = "js/TankStart.js"></script>
+	<script type="text/javascript" src = "js/Tank.js"></script>
+	<script type="text/javascript" src = "js/MyTank.js"></script>
+	<script type="text/javascript" src = "js/Bullet.js"></script>
+	<script type="text/javascript" src = "js/HitFx.js"></script>
+	<script type="text/javascript" src = "js/BombFx.js"></script>
+	<script type="text/javascript" src = "js/Food.js"></script>
+	<script type="text/javascript" src = "js/ScoreBoard.js"></script>
+	<script type="text/javascript" src = "js/Score.js"></script>
+	<script type="text/javascript" src = "js/Num.js"></script>
+	<script type="text/javascript" src = "js/Main.js"></script>
+	<script type="text/javascript" src = "js/BinaryHeap.js"></script>
+	<script type="text/javascript" src = "js/AI.js"></script>
+	
+	<audio id="attack" src="sound/attack.mp3"></audio>
+	<audio id="bomb0" src="sound/bomb0.mp3"></audio>
+	<audio id="bomb1" src="sound/bomb1.mp3"></audio>
+	<audio id="food" src="sound/food.mp3"></audio>
+	<audio id="stageStart" src="sound/stageStart.mp3"></audio>
+	<audio id="shootOver" src="sound/shootOver.mp3"></audio>
+</body>
+</html>
