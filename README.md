@@ -8,6 +8,7 @@ Ubuntu
 >mongodb
 >nginx-joomla
 >shadowsocks
+>tomcat
 
 Centos7
 
@@ -24,4 +25,10 @@ Centos7
 >WordPress
 
 Game
+
+>童年的一些游戏
+
 ###开发环境与测试环境的建立DevOps
+###树莓派测试相关
+###持续集成实践
+###集群部署
