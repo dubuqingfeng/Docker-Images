@@ -3,28 +3,11 @@
 
 ### 索引
 
-Ubuntu
+Alpine:
 
->ecmall
->fanheo
->mongodb
->nginx-joomla
->shadowsocks
->tomcat
-
-Centos7
-
->Django
->httpd
->mongodb
->mysql
->nginx
->nodeJS
->nodeJS-express
->Python
->PythonWeb
->Shadowsocks
->WordPress
+| 镜像  | 描述 |
+| ------------- | ------------- |
+| [nginx-php](./alpine/nginx-php/docker-compose.yaml) | docker-compose up -d --build |
 
 Game
 

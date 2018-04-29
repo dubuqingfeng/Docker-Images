@@ -1,0 +1,44 @@
+##
+# docker network create site_web
+# docker network connect site_web db or use mysql container
+##
+version: '3'
+networks:
+  site_web:
+    external:
+      name: site_web
+
+services:
+  web:
+    image: site-web
+    container_name: web
+    restart: always
+    build: ./
+    ports:
+      - "9000:9000"
+    depends_on:
+      - mysql
+    networks:
+      - site_web
+  # mysql:
+  #   image: mysql
+  #   container_name: pool_mysql
+  #   restart: always
+  #   ports:
+  #     - ${MYSQL_PORT}:3306
+  #   environment:
+  #     - MYSQL_ROOT_PASSWORD=secret
+  #   volumes:
+  #     - ./db.sql:/docker-entrypoint-initdb.d/db.sql
+  #   networks:
+  #     - site_web
+  nginx:
+    image: nginx:alpine
+    ports:
+      - "8080:80"
+    volumes:
+      - ./config/nginx/conf.d:/etc/nginx/conf.d
+    links:
+      - web
+    networks:
+      - site_web
