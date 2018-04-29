@@ -9,6 +9,15 @@ Alpine:
 | ------------- | ------------- |
 | [nginx-php](./alpine/nginx-php/docker-compose.yaml) | docker-compose up -d --build |
 
+Ubuntu:
+
+| 镜像  | 描述 |
+| ------------- | ------------- |
+| [shadowsocks](./Ubuntu/shadowsocks/README.md) | Shadowsocks |
+| [tomcat](./Ubuntu/tomcat/Dockerfile) | Tomcat |
+| [nginx-joomla](./Ubuntu/nginx-joomla/README.md) | Tomcat |
+| [fanheo](./Ubuntu/fanheo/Dockerfile) | LNMP example |
+
 Game
 
 >童年的一些游戏

@@ -3,7 +3,7 @@
 # Version:
 
 FROM centos:7
-MAINTAINER Dubu Qingfeng <1135326346@qq.com>
+LABEL maintainer="Dubu Qingfeng <1135326346@qq.com>"
 
 RUN yum -y update; yum clean all
 RUN yum -y install epel-release; yum clean all

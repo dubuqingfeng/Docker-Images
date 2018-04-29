@@ -3,7 +3,7 @@
 # Version:1.0.0
 
 FROM centos:7
-MAINTAINER Dubu Qingfeng <1135326346@qq.com>
+LABEL maintainer="Dubu Qingfeng <1135326346@qq.com>"
 
 ENV REFRESHED_AT 2015-06-05
 

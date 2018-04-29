@@ -1,5 +1,5 @@
 FROM tutum/lamp:latest
-MAINTAINER Dubu Qingfeng <1135326346@qq.com>
+LABEL maintainer="Dubu Qingfeng <1135326346@qq.com>"
 
 # Install plugins
 RUN apt-get update && \
