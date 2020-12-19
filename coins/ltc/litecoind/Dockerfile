@@ -1,0 +1,3 @@
+FROM ubuntu
+
+ARG LITECOIN_VERSION=0.16.0
