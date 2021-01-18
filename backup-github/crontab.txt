@@ -1,0 +1,2 @@
+#0 8 * * * cd /work && sh backup.sh
+10 16 * * * cd /work && sh backup.sh
